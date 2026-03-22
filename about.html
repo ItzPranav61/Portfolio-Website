@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Me | Pranav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="glass">
+            <div class="logo">Pranav.dev</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link active">About</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="hire.html" class="nav-link">Hire Me</a></li>
+                <li><button id="theme-toggle" class="filter-btn" style="padding: 0.5rem 1rem;">Light Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about-detailed" class="glass">
+            <h2>About Me</h2>
+            <div class="contact-wrapper">
+
+                <div class="contact-left">
+                    <p>
+                        Hello! I'm <strong>Pranav</strong>, a passionate Web Developer based in India. I am currently
+                        pursuing my BSc in Information Technology, where I am building a robust foundation in computer
+                        science principles, programming, and software development.
+                    </p>
+                    <div class="hero-image" style="margin: 2rem auto; width: 250px; height: 250px;">
+                        <img src="Pranav.png" alt="Pranav Avatar" class="avatar"
+                            style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px; border: 4px solid var(--glass-border); box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+                    </div>
+                    <p>
+                        My journey into coding began with a curiosity for how things work on the web. That curiosity
+                        quickly turned into a dedicated pursuit of technologies like <strong>HTML, CSS,
+                            JavaScript, and jQuery</strong>. I love creating clean and user-friendly
+                        interfaces that provide real value to users.
+                    </p>
+
+                    <h3
+                        style="margin-top: 2rem; margin-bottom: 1rem; color: var(--text-heading); font-family: 'Poppins', sans-serif;">
+                        Education</h3>
+                    <ul style="list-style: none; color: var(--text-main);">
+                        <li
+                            style="margin-bottom: 1rem; padding-left: 1rem; border-left: 2px solid var(--accent-color);">
+                            <strong>BSc in Information Technology</strong><br>
+                            <span style="font-size: 0.9rem; color: var(--text-muted);">Current</span>
+                        </li>
+                    </ul>
+
+                    <h3
+                        style="margin-top: 2rem; margin-bottom: 1rem; color: var(--text-heading); font-family: 'Poppins', sans-serif;">
+                        Interests</h3>
+                    <p>
+                        I’m someone who learns by building, not just watching tutorials. I spend time experimenting with
+                        web projects, figuring things out when they break, and improving my problem-solving skills.
+                        Outside of coding, I like exploring new ideas and staying updated with what’s actually working
+                        in tech. I use AI-assisted tools to enhance my learning process, experiment with code, and
+                        improve problem-solving efficiency in web development.
+                    </p>
+                </div>
+
+                <div class="social-sidebar">
+                    <div class="social-icons-vertical">
+                        <!-- X (Twitter) -->
+                        <a href="https://x.com/PSawant610" class="social-btn" aria-label="X" target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+                                <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+                            </svg>
+                        </a>
+                        <!-- Instagram -->
+                        <a href="https://www.instagram.com/pranav_sawant863/" class="social-btn" aria-label="Instagram"
+                            target="_blank">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <!-- LinkedIn -->
+                        <a href="https://www.linkedin.com/in/pranav-sawant-1061a63a5" class="social-btn"
+                            aria-label="LinkedIn">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect x="2" y="9" width="4" height="12"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="social-label-vertical">Follow Me</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="glass footer-card">
+            &copy; <span id="year"></span> Pranav • Built with HTML, CSS, and jQuery
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

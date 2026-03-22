@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects | Pranav</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="glass">
+            <div class="logo">Pranav.dev</div>
+            <ul>
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="projects.html" class="nav-link active">Projects</a></li>
+                <li><a href="skills.html" class="nav-link">Skills</a></li>
+                <li><a href="hire.html" class="nav-link">Hire Me</a></li>
+                <li><button id="theme-toggle" class="filter-btn" style="padding: 0.5rem 1rem;">Light Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="projects" class="glass">
+            <h2>Projects</h2>
+
+            <div class="projects-controls">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web</button>
+                <button class="filter-btn" data-filter="js">JS</button>
+                <button class="filter-btn" data-filter="c">C/C++</button>
+                <button class="filter-btn" data-filter="fun">Experiments</button>
+                <!-- Dynamic DOM creation button -->
+                <button id="add-project" class="filter-btn"
+                    style="margin-left: auto; border-color: var(--accent-color); color: var(--accent-color);">+ Add
+                    Project</button>
+            </div>
+
+            <div class="projects-grid">
+                <article class="project-card glass" data-type="web">
+                    <span class="project-tag">Web</span>
+                    <h3>Personal Portfolio</h3>
+                    <p>A responsive single-page portfolio using HTML, CSS, and jQuery with traversal methods.</p>
+                </article>
+
+                <article class="project-card glass" data-type="c">
+                    <span class="project-tag">C</span>
+                    <h3>Data Structures Library</h3>
+                    <p>Reusable C implementations of lists, stacks, queues, and trees with comprehensive documentation.
+                    </p>
+                </article>
+
+                <article class="project-card glass" data-type="fun">
+                    <span class="project-tag">Fun</span>
+                    <h3>DOM Playground</h3>
+                    <p>Experimenting with jQuery traversal, animations, and dynamic DOM manipulation techniques.</p>
+                </article>
+            </div>
+
+            <div class="log glass">
+                <h4>Traversal & DOM Manipulation Log</h4>
+                <ul id="log-list">
+                    <li>Page loaded. Projects ready.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="glass footer-card">
+            &copy; <span id="year"></span> Pranav • Built with HTML, CSS, and jQuery
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

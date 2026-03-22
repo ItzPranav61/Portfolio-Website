@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pranav Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <nav class="glass">
+      <div class="logo">Pranav.dev</div>
+      <ul>
+        <li><a href="index.html" class="nav-link active">Home</a></li>
+        <li><a href="about.html" class="nav-link">About</a></li>
+        <li><a href="projects.html" class="nav-link">Projects</a></li>
+        <li><a href="skills.html" class="nav-link">Skills</a></li>
+        <li><a href="hire.html" class="nav-link">Hire Me</a></li>
+        <li><button id="theme-toggle" class="filter-btn" style="padding: 0.5rem 1rem;">Light Mode</button></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="home-main">
+    <div class="home-container">
+      <div class="hero-split">
+        <div class="hero-left">
+          <div class="status-row">
+            <span class="role-text"><span class="bullet">•</span> Web Developer</span>
+            <span class="status-badge-green"><span class="status-dot-green"></span> AVAILABLE FOR WORK</span>
+          </div>
+
+          <h1 class="cta-title-split">I'm Pranav</h1>
+          <p class="cta-subtitle-split">
+            Web Developer from India . Currently building clean interfaces and interactive features.
+          </p>
+
+          <div class="cta-buttons">
+            <button class="action-btn primary" onclick="window.location.href='hire.html'">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="12" y1="8" x2="12" y2="16"></line>
+                <line x1="8" y1="12" x2="16" y2="12"></line>
+              </svg>
+              Hire Me
+            </button>
+            <button id="copy-email-btn" class="action-btn secondary" data-email="sawantpranav610@gmail.com">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
+                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
+              </svg>
+              Copy Email
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="avatar-container-large">
+            <img src="Pranav.png" alt="Pranav Image" class="avatar-large">
+          </div>
+        </div>
+      </div>
+
+      <div class="cta-section glass"
+        style="margin-top: 4rem; margin-bottom: 2rem; padding: 3rem; border-radius: 20px; width: 100%; max-width: 800px;">
+        <h2 class="cta-title" style="font-size: 3.5rem;">Let’s work together.</h2>
+        <p class="cta-subtitle">Creating user experience and visual appealing design</p>
+      </div>
+
+      <div class="social-bar-home glass">
+        <div class="social-left">
+          <span class="status-dot"></span>
+          <span class="follow-text">Follow Me</span>
+        </div>
+        <div class="social-right">
+          <!-- X (Twitter) -->
+          <a href="https://x.com/PSawant610" class="social-icon" aria-label="X" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
+              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
+            </svg>
+          </a>
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/pranav_sawant863/" class="social-icon" aria-label="Instagram"
+            target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+          </a>
+          <!-- Dribbble (placeholder as requested in design image, though previously removed, adding back for visual match or we can skip if user hates it. Image shows Dribbble icon. I'll add it for fidelity to image, but can remove.) -->
+          <!-- Skipping Dribbble to respect previous "don't add third icon" preference, preserving user preference over image fidelity for that specific detail unless asked. -->
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/pranav-sawant-1061a63a5" class="social-icon" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <footer class="home-footer">
+        &copy; <span id="year"></span> Pranav • Built with HTML, CSS, and jQuery
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
