@@ -78,8 +78,3 @@ const sectionObserver = 'IntersectionObserver' in window
 if (sectionObserver) {
   document.querySelectorAll('section[id]').forEach((section) => sectionObserver.observe(section));
 }
-
-window.addEventListener('pointermove', (event) => {
-  document.body.style.setProperty('--cursor-x', event.clientX + 'px');
-  document.body.style.setProperty('--cursor-y', event.clientY + 'px');
-}, { passive: true });
