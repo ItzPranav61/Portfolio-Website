@@ -1,55 +1,47 @@
-# Portfolio-Website
-This is my Portfolio website ...
+# Pranav Sawant Portfolio
 
-🚀 Portfolio Website
+A modern, cinematic, dark-theme personal portfolio for Pranav Sawant — a BSc IT student and aspiring web/full-stack developer.
 
-Live Demo: https://itzpranav61.github.io/Portfolio-Website/
+Live site: https://itzpranav61.github.io/Portfolio-Website/
 
-👨‍💻 About This Project
+## What this portfolio focuses on
 
-This is my personal portfolio website built to showcase what I actually build, not just what I claim.
+- Honest proof-based personal branding
+- Strong hero section with clear positioning
+- Real project showcase: BuildNest, Aaspas, Tailor Fit
+- Recruiter/client-friendly skills and contact sections
+- Premium dark UI with glass surfaces, gradients, and tasteful motion
+- Mobile responsive layout
+- Fast static HTML/CSS/JavaScript structure
 
-It highlights:
+## Tech stack
 
-My projects
-My technical skills
-My approach to web development
-And how I think as a developer
+- HTML5
+- CSS3
+- Vanilla JavaScript
+- GitHub Pages
 
-No fluff. Just proof of work.
+## Run locally
 
-⚡ Tech Stack
-HTML5
-CSS3
-JavaScript
-Responsive Design
-Modern UI/UX Principles
-🎯 What This Portfolio Focuses On
-Clean and minimal design (no clutter, no confusion)
-Smooth user experience across all devices
-Fast loading and performance-focused structure
-Straightforward navigation (no overengineering)
-🧠 Why I Built This
+Open `index.html` directly in a browser, or run a small local server:
 
-Most beginners just “learn” — I build.
+```bash
+python -m http.server 8080
+```
 
-This portfolio is my way of:
+Then visit:
 
-Applying what I learn in real projects
-Showing consistency, not just motivation
-Proving I can take an idea → design → deploy
-🛠️ What I’m Working On Next
-More real-world projects (not tutorial clones)
-Better UI/UX and animations
-Integrating AI-assisted development (“vibe coding”)
-Freelance-ready project builds
-📬 Let’s Connect
+```text
+http://localhost:8080
+```
 
-If you want:
+## Files
 
-A website built
-A collaboration
-Or just to talk tech
+- `index.html` — main one-page portfolio
+- `style.css` — complete visual system and responsive styling
+- `script.js` — mobile nav, email copy, reveal animations, active nav state
+- `about.html`, `projects.html`, `skills.html`, `hire.html` — legacy redirects to the matching sections on the main page
 
-Reach out through the contact section on the site.
+## Content rule
 
+Keep the site honest. Do not add fake company experience, fake achievements, fake metrics, or exaggerated founder language. Update projects only when there is real proof: repo, live link, screenshot, case study, or shipped feature.

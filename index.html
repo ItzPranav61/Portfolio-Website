@@ -4,124 +4,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Pranav Portfolio</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Inter:wght@400&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-
+  <meta name="description" content="Pranav Sawant - BSc IT student and aspiring web/full-stack developer building practical web products, UI experiments, and automation-focused projects." />
+  <meta name="theme-color" content="#080914" />
+  <title>Pranav Sawant | Web Developer Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css?v=cinematic-2" />
 </head>
 
 <body>
-  <header>
-    <nav class="glass">
-      <div class="logo">Pranav.dev</div>
-      <ul>
-        <li><a href="index.html" class="nav-link active">Home</a></li>
-        <li><a href="about.html" class="nav-link">About</a></li>
-        <li><a href="projects.html" class="nav-link">Projects</a></li>
-        <li><a href="skills.html" class="nav-link">Skills</a></li>
-        <li><a href="hire.html" class="nav-link">Hire Me</a></li>
-        <li><button id="theme-toggle" class="filter-btn" style="padding: 0.5rem 1rem;">Light Mode</button></li>
-      </ul>
+  <header class="site-header">
+    <nav class="nav-shell" aria-label="Primary navigation">
+      <a class="brand" href="#top" aria-label="Pranav Sawant home">
+        <span class="brand-mark">PS</span>
+        <span>Pranav.dev</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-label="Open navigation" aria-expanded="false">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" data-nav-links>
+        <a href="#work">Work</a>
+        <a href="#skills">Skills</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+      <a class="nav-cta" href="mailto:sawantpranav610@gmail.com">Let's talk</a>
     </nav>
   </header>
 
-  <main class="home-main">
-    <div class="home-container">
-      <div class="hero-split">
-        <div class="hero-left">
-          <div class="status-row">
-            <span class="role-text"><span class="bullet">•</span> Web Developer</span>
-            <span class="status-badge-green"><span class="status-dot-green"></span> AVAILABLE FOR WORK</span>
-          </div>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="hero-copy reveal">
+        <p class="eyebrow">BSc IT student | Student builder | Open to internship work</p>
+        <h1>Building clean web products from real problems, not fake hype.</h1>
+        <p class="hero-lede">
+          I'm Pranav Sawant, an aspiring web/full-stack developer from India. I build practical web apps,
+          improve them in public, and focus on becoming useful enough for a paid web/full-stack internship.
+        </p>
 
-          <h1 class="cta-title-split">I'm Pranav</h1>
-          <p class="cta-subtitle-split">
-            Web Developer in training. Building my skills in web development and Python. I document my progress publicly because I learn better when I'm accountable.
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#work">View my work</a>
+          <button class="btn btn-secondary" type="button" data-copy-email="sawantpranav610@gmail.com">Copy email</button>
+        </div>
+
+        <div class="proof-row" aria-label="Profile highlights">
+          <span>BSc IT student</span>
+          <span>Web / Full-stack focus</span>
+          <span>Project-first learning</span>
+        </div>
+      </div>
+
+      <aside class="hero-panel reveal" aria-label="Current focus card">
+        <div class="portrait-frame">
+          <img src="Pranav.png" alt="Pranav Sawant" />
+        </div>
+        <div class="status-card">
+          <span class="live-dot"></span>
+          <p>Currently sharpening frontend, backend basics, project polish, and internship communication.</p>
+        </div>
+        <div class="mini-grid">
+          <div>
+            <strong>Stack</strong>
+            <span>HTML • CSS • JS • React • Next.js</span>
+          </div>
+          <div>
+            <strong>Tools</strong>
+            <span>GitHub • Vercel • Supabase • VS Code</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <section class="marquee-band reveal" aria-label="Positioning statement">
+      <span>Student builder</span>
+      <span>Proof over claims</span>
+      <span>Clean UI</span>
+      <span>Practical products</span>
+      <span>Internship-ready mindset</span>
+    </section>
+
+    <section id="work" class="section-pad work-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Selected work</p>
+        <h2>Projects with actual product thinking.</h2>
+        <p>
+          These are not inflated “enterprise platforms.” They’re honest student projects built to learn real web product
+          decisions: structure, UI, data, deployment, and user flow.
+        </p>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card featured reveal">
+          <div class="project-topline">
+            <span class="project-number">01</span>
+            <span class="project-type">Opportunity platform</span>
+          </div>
+          <h3>BuildNest Opportunity Radar</h3>
+          <p>
+            A curated opportunity board for student developers and builders, focused on listing useful hackathons,
+            internships, and learning opportunities with cleaner discovery.
           </p>
-
-          <div class="cta-buttons">
-            <button class="action-btn primary" onclick="window.location.href='hire.html'">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <circle cx="12" cy="12" r="10"></circle>
-                <line x1="12" y1="8" x2="12" y2="16"></line>
-                <line x1="8" y1="12" x2="16" y2="12"></line>
-              </svg>
-              Hire Me
-            </button>
-            <button id="copy-email-btn" class="action-btn secondary" data-email="sawantpranav610@gmail.com">
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                stroke-linecap="round" stroke-linejoin="round">
-                <rect x="9" y="9" width="13" height="13" rx="2" ry="2"></rect>
-                <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"></path>
-              </svg>
-              Copy Email
-            </button>
+          <ul class="project-points">
+            <li>Opportunity listing, search/filter, detail pages, external links</li>
+            <li>Deadline/status handling including rolling deadlines</li>
+            <li>Trust-focused idea: verified, useful listings instead of random noise</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Supabase</span><span>PostgreSQL</span>
           </div>
-        </div>
+          <a class="text-link" href="https://github.com/ItzPranav61/buildnest-v2" target="_blank" rel="noreferrer">View GitHub repo</a>
+        </article>
 
-        <div class="hero-right">
-          <div class="avatar-container-large">
-            <img src="Pranav.png" alt="Pranav Image" class="avatar-large">
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-number">02</span>
+            <span class="project-type">Hyperlocal app</span>
           </div>
-        </div>
+          <h3>Aaspas</h3>
+          <p>
+            A locality-first community web app idea for nearby posts, groups, businesses, and area-based discovery.
+          </p>
+          <ul class="project-points">
+            <li>Locality onboarding and area-based content</li>
+            <li>Business categories and community groups</li>
+            <li>Practice with product structure, database thinking, and deployment</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Next.js</span><span>React</span><span>Tailwind</span><span>Supabase</span><span>Prisma</span>
+          </div>
+          <a class="text-link" href="https://github.com/ItzPranav61/aaspas" target="_blank" rel="noreferrer">View GitHub repo</a>
+        </article>
+
+        <article class="project-card reveal">
+          <div class="project-topline">
+            <span class="project-number">03</span>
+            <span class="project-type">Hackathon tool</span>
+          </div>
+          <h3>Tailor Fit</h3>
+          <p>
+            A resume tailoring tool built around a practical job-readiness problem: helping applicants improve how they
+            position their resume for a specific role.
+          </p>
+          <ul class="project-points">
+            <li>Clear MVP around resume improvement</li>
+            <li>AI-assisted output with honest limitations</li>
+            <li>Built for demo clarity and portfolio proof</li>
+          </ul>
+          <div class="tech-stack">
+            <span>Next.js</span><span>TypeScript</span><span>Tailwind</span><span>Zod</span><span>AI API</span>
+          </div>
+          <a class="text-link" href="https://github.com/ItzPranav61/Tailor-fit" target="_blank" rel="noreferrer">View GitHub repo</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section-pad split-section">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Skills</p>
+        <h2>What I can work with right now.</h2>
+        <p>
+          No pretending to be a senior engineer. This is the practical stack I'm using while improving my fundamentals.
+        </p>
       </div>
 
-      <div class="cta-section glass"
-        style="margin-top: 4rem; margin-bottom: 2rem; padding: 3rem; border-radius: 20px; width: 100%; max-width: 800px;">
-        <h2 class="cta-title" style="font-size: 3.5rem;">Let’s work together.</h2>
-        <p class="cta-subtitle">Creating user experience and visual appealing design</p>
-      </div>
-
-      <div class="social-bar-home glass">
-        <div class="social-left">
-          <span class="status-dot"></span>
-          <span class="follow-text">Follow Me</span>
+      <div class="skill-matrix reveal">
+        <div class="skill-block">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, responsive layouts, UI polish, accessibility basics, React basics.</p>
         </div>
-        <div class="social-right">
-          <!-- X (Twitter) -->
-          <a href="https://x.com/PSawant610" class="social-icon" aria-label="X" target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M4 4l11.733 16h4.267l-11.733 -16z" />
-              <path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772" />
-            </svg>
-          </a>
-          <!-- Instagram -->
-          <a href="https://www.instagram.com/pranav_sawant863/" class="social-icon" aria-label="Instagram"
-            target="_blank">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-            </svg>
-          </a>
-          <!-- Dribbble (placeholder as requested in design image, though previously removed, adding back for visual match or we can skip if user hates it. Image shows Dribbble icon. I'll add it for fidelity to image, but can remove.) -->
-          <!-- Skipping Dribbble to respect previous "don't add third icon" preference, preserving user preference over image fidelity for that specific detail unless asked. -->
-          <!-- LinkedIn -->
-          <a href="https://www.linkedin.com/in/pranav-sawant-1061a63a5" class="social-icon" aria-label="LinkedIn">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-              stroke-linecap="round" stroke-linejoin="round">
-              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-              <rect x="2" y="9" width="4" height="12"></rect>
-              <circle cx="4" cy="4" r="2"></circle>
-            </svg>
-          </a>
+        <div class="skill-block">
+          <h3>Full-stack practice</h3>
+          <p>Next.js, API routes, Supabase, PostgreSQL, Prisma basics, form flows, deployment workflows.</p>
+        </div>
+        <div class="skill-block">
+          <h3>Tools</h3>
+          <p>Git, GitHub, VS Code, Vercel, browser testing, debugging, Figma/Canva basics, AI-assisted development.</p>
+        </div>
+        <div class="skill-block">
+          <h3>Foundations</h3>
+          <p>Python basics, DBMS, OOP basics, data structures basics, clean project documentation, communication practice.</p>
         </div>
       </div>
+    </section>
 
-      <footer class="home-footer">
-        &copy; <span id="year"></span> Pranav • Built with HTML, CSS, and jQuery
-      </footer>
-    </div>
+    <section id="about" class="section-pad about-section">
+      <div class="about-card reveal">
+        <p class="eyebrow">About</p>
+        <h2>I'm still early, but I'm not casual.</h2>
+        <p>
+          I'm a BSc IT student working toward a paid software/web/full-stack internship. My edge is simple:
+          I build, debug, document, and keep improving instead of only watching tutorials.
+        </p>
+        <p>
+          I'm currently focused on stronger frontend execution, backend fundamentals, project case studies, and explaining
+          my work clearly enough for recruiters, clients, and technical interviews.
+        </p>
+      </div>
+
+      <div class="principles-grid reveal">
+        <div>
+          <span>01</span>
+          <h3>Proof first</h3>
+          <p>Real projects, real repos, real improvements. No fake titles or fake scale.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Useful UI</h3>
+          <p>Clean layout, clear CTA, readable copy, and mobile-first execution.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Ship and learn</h3>
+          <p>Build small, test fast, fix what breaks, and turn lessons into portfolio proof.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-pad contact-section reveal">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Need a serious junior builder?</h2>
+        <p>
+          I'm open to paid internships, beginner-friendly web development work, and project collaborations where I can
+          contribute, learn fast, and communicate honestly.
+        </p>
+      </div>
+
+      <div class="contact-actions">
+        <a class="btn btn-primary" href="mailto:sawantpranav610@gmail.com">Email me</a>
+        <a class="btn btn-secondary" href="https://github.com/ItzPranav61" target="_blank" rel="noreferrer">GitHub</a>
+        <a class="btn btn-secondary" href="https://www.linkedin.com/in/pranav-sawant-1061a63a5" target="_blank" rel="noreferrer">LinkedIn</a>
+      </div>
+    </section>
   </main>
 
-  <script src="script.js"></script>
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Pranav Sawant. Built with HTML, CSS, and JavaScript.</p>
+    <a href="#top">Back to top</a>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast>Email copied.</div>
+  <script src="./script.js?v=cinematic-2"></script>
 </body>
 
 </html>
